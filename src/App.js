@@ -28,20 +28,22 @@ function App() {
         let parsedData;
         try {
           parsedData = JSON.parse(input);
-        } catch (jsonError) {
+        } catch (error) {
           message.error("Invalid JSON format. Please check your input.");
-          console.error("JSON Parsing Error:", jsonError);
+          console.error("JSON Parsing Error:", error);
           return;
         }
 
         console.log("Sending data:", parsedData);
+
         const result = await postData(parsedData).unwrap();
         console.log("API Response:", result);
-      } catch (err) {
+      } catch (error) {
         message.error("API error. Please try again.");
-        console.error("API Error:", err);
+        console.error("API Error:", error);
       }
     };
+
 
 
 

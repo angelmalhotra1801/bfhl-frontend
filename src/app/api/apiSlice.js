@@ -8,7 +8,7 @@ export const apiSlice = createApi({
   endpoints: (builder) => ({
     postData: builder.mutation({
       query: (data) => ({
-        url: "/",
+        url: "/bfhl", // <- Corrected
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: data,
@@ -16,11 +16,12 @@ export const apiSlice = createApi({
     }),
     getOperationCode: builder.query({
       query: () => ({
-        url: "/",
+        url: "/bfhl", // <- Corrected
         method: "GET",
       }),
     }),
   }),
 });
+
 
 export const { usePostDataMutation, useGetOperationCodeQuery } = apiSlice;
