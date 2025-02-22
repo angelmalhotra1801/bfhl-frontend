@@ -32,4 +32,4 @@ The frontend interacts with the following API endpoint:
 3. View the filtered results displayed on the page.
 
 ## URL
-[https://bajajfinserv-challenge1.onrender.com](https://bfhl-frontend-7sng.onrender.com)
+[https://bfhl-frontend-7sng.onrender.com](https://bfhl-frontend-7sng.onrender.com)
